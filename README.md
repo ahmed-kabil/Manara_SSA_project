@@ -103,3 +103,39 @@ This project uses two S3 buckets:
 🚫 Prevents: Reading or modifying files after upload.
 
 🔒 Security Note: Use validation in Lambda to handle unknown or malicious uploads.
+
+
+#### 🔹 Destination Bucket Policy (Public read Access Only)
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyInsecureTransport",
+      "Effect": "Deny",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::destination-bucket-name/*",
+      "Condition": {
+        "Bool": {
+          "aws:SecureTransport": "false"
+        }
+      }
+    },
+    {
+      "Sid": "AllowPublicReadAccess",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::destination-bucket-name/*"
+    }
+  ]
+}
+
+```
+✅ Allows: Any client to read objects via HTTPS (GET requests only).
+
+🚫 Prevents: Access over insecure HTTP or any upload/modify operations.
+
+🔒 Security Note: Maintain strict upload control to avoid unauthorized modifications.
