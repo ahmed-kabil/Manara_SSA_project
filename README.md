@@ -10,7 +10,7 @@ This project implements a **serverless image processing pipeline** using AWS ser
 - **Amazon S3 (Destination Bucket)**: Stores the processed image for retrieval.
 - **Amazon CloudWatch**: Logs all Lambda executions and metrics.
 
-> ![Architecture Diagram](link-to-your-diagram-if-you-have-one)
+> ![Architecture Diagram](Screenshot 2025-05-29 152947.png)
 
 ## 🔁 Workflow
 
