@@ -87,7 +87,7 @@ Allows:
   "Action": "s3:PutObject",
   "Resource": "arn:aws:s3:::source-bucket-name/*"
 }
-
+```
 
 ## 📜 S3 Bucket Policies
 
@@ -109,7 +109,7 @@ This project uses two S3 buckets:
   "Action": "s3:PutObject",
   "Resource": "arn:aws:s3:::source-bucket-name/*"
 }
-
+```
 ✅ Allows: Any client to upload images.
 
 🚫 Prevents: Reading or modifying files after upload.
