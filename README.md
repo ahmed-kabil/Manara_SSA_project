@@ -10,7 +10,7 @@ This project implements a **serverless image processing pipeline** using AWS ser
 - **Amazon S3 (Destination Bucket)**: Stores the processed image for retrieval.
 - **Amazon CloudWatch**: Logs all Lambda executions and metrics.
 
-> ![Architecture Diagram](https://private-user-images.githubusercontent.com/141506830/448830574-442d10fc-d42c-40ed-b058-bf037b4099a7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDg1MjI2MzgsIm5iZiI6MTc0ODUyMjMzOCwicGF0aCI6Ii8xNDE1MDY4MzAvNDQ4ODMwNTc0LTQ0MmQxMGZjLWQ0MmMtNDBlZC1iMDU4LWJmMDM3YjQwOTlhNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTI5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUyOVQxMjM4NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNDY4MDA0NmEyOTYzOGQwZDAwZWRkODNkMDMxZDM3N2E1ZGEzYzQ0YjE3MjJjYjI0MTNkMjk4Y2U3MDFkNDZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.aOx6qkzK-ZK2z_JF4gzhQgMfb72lwZVkmQYb7KM73_Q)
+> ![Architecture Diagram]()
 
 ## 🔁 Workflow
 
