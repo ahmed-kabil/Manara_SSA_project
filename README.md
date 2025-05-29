@@ -154,6 +154,8 @@ This project uses two S3 buckets:
 
 ☁️ Fully Serverless: No infrastructure management.
 
+---
+
 🚀 Future Improvements
 
 Add Rekognition for face/object detection
