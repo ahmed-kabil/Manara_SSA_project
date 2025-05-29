@@ -139,3 +139,22 @@ This project uses two S3 buckets:
 🚫 Prevents: Access over insecure HTTP or any upload/modify operations.
 
 🔒 Security Note: Maintain strict upload control to avoid unauthorized modifications.
+
+
+💡 Features
+🔄 Scalable: Automatically scales with uploads.
+
+💰 Cost-Efficient: Pay only for what you use.
+
+🧩 Modular: Easily extend with Rekognition or Step Functions.
+
+☁️ Fully Serverless: No infrastructure management.
+
+🚀 Future Improvements
+Add Rekognition for face/object detection
+
+Use Step Functions for advanced workflows
+
+API Gateway for a REST interface
+
+Secure uploads/downloads via pre-signed URLs
