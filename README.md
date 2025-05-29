@@ -104,6 +104,7 @@ This project uses two S3 buckets:
 
 🔒 Security Note: Use validation in Lambda to handle unknown or malicious uploads.
 
+---
 
 #### 🔹 Destination Bucket Policy (Public read Access Only)
 
@@ -139,6 +140,8 @@ This project uses two S3 buckets:
 🚫 Prevents: Access over insecure HTTP or any upload/modify operations.
 
 🔒 Security Note: Maintain strict upload control to avoid unauthorized modifications.
+
+---
 
 
 💡 Features
