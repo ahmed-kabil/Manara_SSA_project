@@ -61,3 +61,56 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': f'Image processed and uploaded to {destination_key}'
     }
+
+
+## 🔐 Security & IAM
+
+### ✅ Lambda IAM Role
+
+Allows:
+
+- 📥 Read access to **Source Bucket**
+- 📤 Write access to **Destination Bucket**
+- 📬 Full access to **SQS queue** (receive/delete)
+
+---
+
+### 📜 S3 Bucket Policies
+
+#### 📁 Source Bucket (Allow public upload):
+
+```json
+{
+  "Effect": "Allow",
+  "Principal": "*",
+  "Action": "s3:PutObject",
+  "Resource": "arn:aws:s3:::source-bucket-name/*"
+}
+
+
+## 📜 S3 Bucket Policies
+
+This project uses two S3 buckets:
+
+- **Source Bucket**: Accepts public uploads of raw images.
+- **Destination Bucket**: Hosts publicly accessible processed images (read-only, HTTPS enforced).
+
+---
+
+### 🔐 Combined Bucket Policy Configuration
+
+#### 🔹 Source Bucket Policy (Public Upload Access Only)
+
+```json
+{
+  "Effect": "Allow",
+  "Principal": "*",
+  "Action": "s3:PutObject",
+  "Resource": "arn:aws:s3:::source-bucket-name/*"
+}
+
+✅ Allows: Any client to upload images.
+
+🚫 Prevents: Reading or modifying files after upload.
+
+🔒 Security Note: Use validation in Lambda to handle unknown or malicious uploads.
