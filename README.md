@@ -145,6 +145,7 @@ This project uses two S3 buckets:
 
 
 💡 Features
+
 🔄 Scalable: Automatically scales with uploads.
 
 💰 Cost-Efficient: Pay only for what you use.
@@ -154,6 +155,7 @@ This project uses two S3 buckets:
 ☁️ Fully Serverless: No infrastructure management.
 
 🚀 Future Improvements
+
 Add Rekognition for face/object detection
 
 Use Step Functions for advanced workflows
