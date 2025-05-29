@@ -76,18 +76,6 @@ Allows:
 
 ---
 
-### 📜 S3 Bucket Policies
-
-#### 📁 Source Bucket (Allow public upload):
-
-```json
-{
-  "Effect": "Allow",
-  "Principal": "*",
-  "Action": "s3:PutObject",
-  "Resource": "arn:aws:s3:::source-bucket-name/*"
-}
-```
 
 ## 📜 S3 Bucket Policies
 
