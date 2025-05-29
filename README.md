@@ -62,6 +62,7 @@ def lambda_handler(event, context):
         'body': f'Image processed and uploaded to {destination_key}'
     }
 
+```
 
 ## 🔐 Security & IAM
 
